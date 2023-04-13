@@ -131,3 +131,25 @@ nav {
     text-transform: uppercase;
     margin: 20px 0;
   }
+
+  .lär_känna_mig {
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vw;
+  }
+
+  #container {
+	display: block;
+	justify-content: center;
+	width: 80%;
+    background: beige;
+    height: 40vh;
+    text-align: center;
+}
+
+.parfotografering {
+    background-color: beige;
+}

@@ -11,10 +11,7 @@ fotograferaren och om de skulle vara kompatibla.
 - Skriv idéförklaring
 - Gör planering
 - Skapa skiss för både desktop och mobil (dubbelkolla med läraren)
-- Välj mellan flex eller grid
-- Påbörja kodning för mobil layout
-
-*utvärdering* 
+- Påbörja kodning för desktop layout
 
 **v.13**
 - 
@@ -27,7 +24,7 @@ fotograferaren och om de skulle vara kompatibla.
 *utvärdering* 
 
 **v.15**
-- 
+- Koda klart index
 
 *utvärdering* 
 
