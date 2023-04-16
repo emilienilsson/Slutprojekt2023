@@ -103,6 +103,7 @@ nav {
     cursor: pointer;
 }
 
+/* Index header */
 .intro {
     display: flex;
     flex-direction: column;
@@ -117,7 +118,7 @@ nav {
   }
 
   .intro h1 {
-    font-family: sans-serif;
+    font-family: serif;
     font-size: 60px;
     color: rgb(236, 236, 191);
     font-weight: bold;
@@ -130,7 +131,9 @@ nav {
     color:  rgb(236, 236, 191);;
     text-transform: uppercase;
     margin: 20px 0;
+    font-family: sans-serif;
   }
+  
 
   .lär_känna_mig {
     background-color: darkgray;
@@ -139,17 +142,111 @@ nav {
     justify-content: center;
     align-items: center;
     height: 30vw;
+    width: 100%;
   }
 
   #container {
 	display: block;
 	justify-content: center;
-	width: 80%;
+	width: 60%;
     background: beige;
     height: 40vh;
     text-align: center;
+    font-size: large;
 }
 
-.parfotografering {
-    background-color: beige;
+.box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: beige;
+    height: 80vh;
+  }
+
+  #box_1 {
+    text-align: center;
+    font-size: large;
+    padding: 50px;
+    line-height: 1.4;
+    width: 40vw;
+    margin-left: 20px;
+    margin: 60px;
+  }
+
+  h2 {
+    font-size: xx-large;
+  }
+
+  #box_2 {
+    height: 80vh;
+    margin: 60px;
+    margin-right: 150px;
+    width: 30vw;
+    object-fit: cover;
+  }
+
+  #box_3 {
+    background: beige;
+  }
+
+  .review {
+    height: auto;
+    background-color: rgba(198, 77, 41, 0.708);
+    text-align: center;
+    line-height: 1.4;
+    padding: 30px;
+  }
+
+  .review p {
+    padding: 15px;
+  }
+
+/* Header för alla sidor exluderande index */
+
+figure {
+    position: relative;
+    text-align: center;
+    background-color: rgb(76, 75, 75);
+    height: 60vh;
+    z-index: -1;
 }
+
+#undertitle {
+    background-color: black;
+    color: rgb(236, 236, 191);
+    font-weight: bold;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    padding: 1.25rem;
+    text-align: center;
+    font-family: serif;
+    font-size: 3rem;
+    padding: 30px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #65b1e7c0;
+    padding: 40px 80px;
+  }
+  
+  .footer .copy {
+    color: black;
+    text-align: center;
+  }
+  
+  .bottom-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+  }
+    
+  .bottom-links .links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+  }
