@@ -2,8 +2,7 @@
 Jag ska göra en hemsida för en bröllopsfotograferare. 
 Innehållet ska bestå av flertal sidor och funktioner med relevant information. 
 Samtidigt ska den reflektera fotograferarens personlighet och stil för att kunna få kontakt med potentiella kunder. 
-Syftet med hemsidan är att vara en typ av marknadsföring och informationssida, för att ge kunderna en bild av 
-fotograferaren och om de skulle vara kompatibla.
+Syftet med hemsidan är att vara en typ av marknadsföring och informationssida, för att ge kunderna en bild av fotograferaren och om de skulle vara kompatibla.
 
 ## Planering
 
@@ -11,27 +10,19 @@ fotograferaren och om de skulle vara kompatibla.
 - Skriv idéförklaring
 - Gör planering
 - Skapa skiss för både desktop och mobil (dubbelkolla med läraren)
-- Påbörja kodning för desktop layout
-
-**v.13**
-- 
-
-*utvärdering* 
-
-**v.14**
-- 
-
-*utvärdering* 
+- Påbörja kodning för desktop layout (nav)
 
 **v.15**
-- Koda klart index
-
-*utvärdering* 
+- Koda header
+- Koda footer
+- Koda skelettet för sidorna
+- Hitta bilder
 
 **v.16**
-- 
-
-*utvärdering* 
+- Bli klar med skelettet för sidorna
+- Fixa fel
+- Koda responderat
+- Potentiellt påbörja mobil layout
 
 **v.17**
 - 

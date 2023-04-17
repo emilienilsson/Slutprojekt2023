@@ -155,6 +155,14 @@ nav {
     font-size: large;
 }
 
+#index_img {
+    background-color: beige;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
   h2 {
     font-size: xx-large;
     font-family: serif;
@@ -165,6 +173,10 @@ nav {
     font-family: sans-serif;
     line-height: 1.4;
     padding: 15px;
+  }
+
+  li {
+    text-align: left;
   }
 
   .review {
@@ -244,7 +256,7 @@ img {
     color: black;
 }
 
-#button_span > * { 
+.button_span > * { 
 	text-decoration: none;
     color: black;
     font-family:sans-serif;
@@ -287,10 +299,22 @@ img {
     height: 100vh;
 }
 
+#box_4 {
+    height: 160vh;
+}
+
+#box_5 {
+    height: 130vh;
+}
+
+#box_6 {
+    height: 80vh;
+}
+
 #box_1_2 {
     text-align: center;
     font-size: large;
-    padding: 50px;
+    padding: 20px;
     width: 40vw;
     margin-left: 20px;
     margin: 60px;
@@ -320,9 +344,16 @@ img {
 /* Portfolio */
 
 .bakgrund {
-    background-color: beige;
     padding-top: 80px;
     padding-bottom: 15px;
+}
+
+#bakgrund_1 {
+    background-color: beige;
+}
+
+#bakgrund_2 {
+    background-color: white;
 }
 
 .gridWrapper {
@@ -333,16 +364,32 @@ img {
     width: auto;
     margin-bottom: 100px;
 
-    grid-template-areas: 
-    "a1 a2 a3"
-    "a4 a5 a6"
-    "a7 a8 a9"
-    "a10 a11 a12"
-    ;
-
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 15px;
+}
+
+#gridwrapper_1 { 
+grid-template-areas: 
+"a1 a2 a3"
+"a4 a5 a6"
+"a7 a8 a9"
+"a10 a11 a12"
+;
+
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(4, 1fr);
+}
+
+
+#gridwrapper_2 { 
+    grid-template-areas: 
+    "a1 a2 a3"
+    "a4 a5 a6"
+    ;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 article {
@@ -484,10 +531,16 @@ article {
 
 /* Kontakt*/
 
-.sign-up-form {
+.form {
     background-color: rgba(198, 77, 41, 0.708);
-    display: flex;
+    padding: 50px;
+}
+
+.sign-up-form {
+    display: grid;
+    align-items: center;
     justify-content: center;
+    padding: 50px;
 }
 
 .form-input {
@@ -513,6 +566,7 @@ article {
     color: white;
     font-weight: 600;
     text-transform: uppercase;
+    margin-left: 70px;
   }
 
   .submit-btn:hover {
@@ -542,3 +596,20 @@ article {
     color: black;
     padding: 10px 30px;
   }
+
+  #arrow_div {
+	text-align: center;
+	grid-area: arrow;
+}
+
+  /* För vår pil som ska skrolla upp på sidan */ #scroll_arrow {
+	height: 10px;
+	width: 10px;
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(-135deg);
+	background-color: transparent !important;
+}
