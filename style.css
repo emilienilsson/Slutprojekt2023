@@ -155,23 +155,6 @@ nav {
     font-size: large;
 }
 
-.box {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    background: beige;
-    height: 80vh;
-  }
-
-  #box_1 {
-    text-align: center;
-    font-size: large;
-    padding: 50px;
-    width: 40vw;
-    margin-left: 20px;
-    margin: 60px;
-  }
-
   h2 {
     font-size: xx-large;
     font-family: serif;
@@ -182,18 +165,6 @@ nav {
     font-family: sans-serif;
     line-height: 1.4;
     padding: 15px;
-  }
-
-  #box_2 {
-    height: 80vh;
-    margin: 60px;
-    margin-right: 150px;
-    width: 30vw;
-    object-fit: cover;
-  }
-
-  #box_3 {
-    background: beige;
   }
 
   .review {
@@ -281,8 +252,9 @@ img {
     border: 2px solid black;
     display: table;
     margin: auto;
-    width: 10vw;
+    width: 15vw;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 #text_1_2, #text_2_2, #text_3_2 {
@@ -294,6 +266,55 @@ img {
     height: 50vh;
     width: 50vw;
     text-align: left;
+}
+
+.box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: beige;
+  }
+
+#box_1 {
+    height: 140vh;
+}
+
+#box_2 {
+    height: 110vh;
+}
+
+#box_3 {
+    height: 100vh;
+}
+
+#box_1_2 {
+    text-align: center;
+    font-size: large;
+    padding: 50px;
+    width: 40vw;
+    margin-left: 20px;
+    margin: 60px;
+    height: 140vh;
+}
+
+#box_2_2 {
+    text-align: center;
+    font-size: large;
+    padding: 50px;
+    width: 40vw;
+    margin-left: 20px;
+    margin: 60px;
+    height: 100vh;
+}
+
+#box_3_2 {
+    text-align: center;
+    font-size: large;
+    padding: 50px;
+    width: 40vw;
+    margin-left: 20px;
+    margin: 60px;
+    height: 100vh;
 }
 
 /* Portfolio */
@@ -463,6 +484,12 @@ article {
 
 /* Kontakt*/
 
+.sign-up-form {
+    background-color: rgba(198, 77, 41, 0.708);
+    display: flex;
+    justify-content: center;
+}
+
 .form-input {
     margin-bottom: 1em;
   }
@@ -470,7 +497,7 @@ article {
   .form-input input {
     width: 30vw;
     padding: 10px;
-    border: 2px solid rgba(102, 102, 104, 0.25);
+    border: none;
     font-weight: 600;
   }
 
