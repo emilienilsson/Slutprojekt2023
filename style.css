@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 *::-webkit-scrollbar {
@@ -9,7 +10,7 @@
   * {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-}
+}  
 
 nav {
     display: flex;
@@ -38,6 +39,7 @@ nav {
     align-items: center;
     list-style: none;
     transition: all 0.5s;
+    background-color: rgb(76, 75, 75);;
 }
 
 #nav-links a {
@@ -61,6 +63,7 @@ nav {
 #nav-links a:hover {
     color: darkgray;
     transition: ease 0.4s;
+    background-color: rgb(236, 236, 191);
 }
 
 .burger_line {
@@ -153,6 +156,7 @@ nav {
     height: 40vh;
     text-align: center;
     font-size: large;
+    padding: 20px;
 }
 
 #index_img {
@@ -169,10 +173,16 @@ nav {
     text-align: center;
   }
 
+  #margin_top {
+    margin-top: 50px;
+}
+
   p {
-    font-family: sans-serif;
+    font-family: 'Times New Roman';
     line-height: 1.4;
     padding: 15px;
+    margin-bottom: 15px;
+    font-size: large;
   }
 
   li {
@@ -221,15 +231,6 @@ img {
     object-fit: cover;
 }
 
-#hur_går_till {
-    height: auto;
-    padding: 35px;
-}
-
-#hur_går_till h2 {
-    font-size: 40px;
-}
-
 .vertical_text {
     display: flex;
     align-items: center;
@@ -248,8 +249,32 @@ img {
     border-radius: 25px;
     padding: 0.9375rem;
     background-color: rgba(198, 77, 41, 0.708);
-    color: white;
+    color: white;  
     height: 200px;
+}
+
+#text_1 {
+    grid-area: a1;
+}
+
+#text_ {
+    grid-area: a2;
+}
+
+#text_3 {
+    grid-area: a3;
+}
+
+#text_4 {
+    grid-area: a4;
+}
+
+#text_5 {
+    grid-area: a5;
+}
+
+#text_6 {
+    grid-area: a6;
 }
 
 #text_1 h3, #text_2 h3, #text_3 h3, #text_4 h3, #text_5 h3, #text_6 h3 {
@@ -259,6 +284,9 @@ img {
 .button_span > * { 
 	text-decoration: none;
     color: black;
+}
+
+.button_span {
     font-family:sans-serif;
     padding: 15px;
     border: 2px solid black;
@@ -266,7 +294,15 @@ img {
     margin: auto;
     width: 15vw;
     text-align: center;
+}
+
+#margin_bottom {
     margin-bottom: 50px;
+}
+
+#margin {
+    margin-top: -60px;
+    margin-bottom: 60px;
 }
 
 #text_1_2, #text_2_2, #text_3_2 {
@@ -278,6 +314,28 @@ img {
     height: 50vh;
     width: 50vw;
     text-align: left;
+}
+
+#text_1_3, #text_2_3, #text_3_3 {
+display: block;
+box-sizing: border-box;
+margin: 2.5rem;
+width: 280px;
+border-radius: 25px;
+padding: 30px;
+background-color: rgba(198, 77, 41, 0.708); 
+height: 100px;
+ }
+
+#text_1_4, #text_2_4, #text_3_4 {
+    display: block;
+    box-sizing: border-box;
+    margin: 2.5rem;
+    margin-top: -50px;
+    width: 280px;
+    border: 5px solid black;
+    padding: 20px;
+    height: 40vh;
 }
 
 .box {
@@ -304,7 +362,7 @@ img {
 }
 
 #box_5 {
-    height: 130vh;
+    height: 120vh;
 }
 
 #box_6 {
@@ -324,10 +382,9 @@ img {
 #box_2_2 {
     text-align: center;
     font-size: large;
-    padding: 50px;
+    padding: 30px;
     width: 40vw;
-    margin-left: 20px;
-    margin: 60px;
+    margin: 40px;
     height: 100vh;
 }
 
@@ -345,7 +402,6 @@ img {
 
 .bakgrund {
     padding-top: 80px;
-    padding-bottom: 15px;
 }
 
 #bakgrund_1 {
@@ -363,26 +419,28 @@ img {
     align-content: center;
     width: auto;
     margin-bottom: 100px;
-
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
     grid-gap: 15px;
 }
 
-#gridwrapper_1 { 
-grid-template-areas: 
-"a1 a2 a3"
-"a4 a5 a6"
-"a7 a8 a9"
-"a10 a11 a12"
-;
+.gridWrapper > article {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(4, 1fr);
+#gridwrapper_1 { 
+    grid-template-areas: 
+    "a1 a2 a3"
+    "a4 a5 a6"
+    "a7 a8 a9"
+    "a10 a11 a12"
+    ;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
 
 
-#gridwrapper_2 { 
+#gridwrapper_2 {
     grid-template-areas: 
     "a1 a2 a3"
     "a4 a5 a6"
@@ -558,7 +616,6 @@ article {
     cursor: pointer;
     width: 20vw;
     padding: 1em;
-    margin-bottom: 1em;
     border: none;
     border-bottom: 5px solid rgb(72, 69, 69);
     border-radius: 0.5em;
