@@ -23,8 +23,12 @@ nav {
 
 #icon {
     margin-right: 70vw;
-    color:  rgb(236, 236, 191);
     font-size: x-large;
+}
+
+#icon > * {
+    text-decoration: none;
+    color:  rgb(236, 236, 191);
 }
 
 #nav-links {
@@ -127,6 +131,7 @@ nav {
     font-weight: bold;
     text-transform: uppercase;
     margin: 0;
+    text-align: center;
   }
   
   .intro p {
@@ -153,18 +158,24 @@ nav {
 	justify-content: center;
 	width: 60%;
     background: beige;
-    height: 40vh;
     text-align: center;
     font-size: large;
     padding: 20px;
+    box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075)
+  ;
 }
 
 #index_img {
     background-color: beige;
+    object-fit: cover;
     display: grid;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
   h2 {
@@ -190,7 +201,6 @@ nav {
   }
 
   .review {
-    height: auto;
     background-color: rgba(198, 77, 41, 0.708);
     text-align: center;
     padding: 30px;
@@ -219,6 +229,13 @@ figure {
     font-family: serif;
     font-size: 3rem;
     padding: 30px;
+    box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075)
+  ;
 }
 
 .par_intro {
@@ -251,6 +268,13 @@ img {
     background-color: rgba(198, 77, 41, 0.708);
     color: white;  
     height: 200px;
+    box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075)
+  ;
 }
 
 #text_1 {
@@ -325,6 +349,13 @@ border-radius: 25px;
 padding: 30px;
 background-color: rgba(198, 77, 41, 0.708); 
 height: 100px;
+box-shadow:
+0 1px 1px hsl(0deg 0% 0% / 0.075),
+0 2px 2px hsl(0deg 0% 0% / 0.075),
+0 4px 4px hsl(0deg 0% 0% / 0.075),
+0 4px 4px hsl(0deg 0% 0% / 0.075),
+0 4px 4px hsl(0deg 0% 0% / 0.075)
+;
  }
 
 #text_1_4, #text_2_4, #text_3_4 {
@@ -385,7 +416,6 @@ height: 100px;
     padding: 30px;
     width: 40vw;
     margin: 40px;
-    height: 100vh;
 }
 
 #box_3_2 {
@@ -435,7 +465,6 @@ height: 100px;
     "a10 a11 a12"
     ;
 
-    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
 }
 
@@ -445,8 +474,7 @@ height: 100px;
     "a1 a2 a3"
     "a4 a5 a6"
     ;
-
-    grid-template-columns: repeat(3, 1fr);
+    
     grid-template-rows: repeat(2, 1fr);
 }
 
@@ -624,6 +652,7 @@ article {
     font-weight: 600;
     text-transform: uppercase;
     margin-left: 70px;
+    margin-top: 30px;
   }
 
   .submit-btn:hover {
@@ -669,4 +698,37 @@ article {
 	transform: rotate(45deg);
 	-webkit-transform: rotate(-135deg);
 	background-color: transparent !important;
+}
+
+/* Mobil layout */
+
+.auto-grid {
+    --auto-grid-min-size: 375px;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 1rem;
+  }
+
+@media screen and (max-width: 800px) {
+
+    .intro h1 {
+        font-size:7vw;
+    }
+
+    .intro p {
+        font-size:3vw;
+    }
+
+    .lär_känna_mig {
+        height: 70vh;
+    }
+
+     #container { 
+	    width: 80%; 
+    }
+
+    #index_img {
+        display: none;
+    }
 }

@@ -21,20 +21,20 @@ Syftet med hemsidan är att vara en typ av marknadsföring och informationssida,
 **v.16**
 - Bli klar med skelettet för sidorna
 - Fixa fel
-- Koda responderat
-- Potentiellt påbörja mobil layout
+- Påbörja mobil layout
+- använd procent eller px vid bilder
+- skuggor
+- responsivitet, t.ex. padding
+- object-fit
 
 **v.17**
-- 
-
-*utvärdering* 
+- responsivitet, t.ex. padding
+- använd procent eller px vid bilder
 
 **v.18**
-- 
-
-*utvärdering* 
+- responsivitet, t.ex. padding
+- potentiell scroll funktion
 
 **v.19**
 - 
 
-*utvärdering* 
