@@ -149,7 +149,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 30vw;
+    height: 70vh;
     width: 100%;
   }
 
@@ -170,7 +170,7 @@ nav {
   ;
 }
 
-#index_img {
+#index_img_2 {
     background-color: beige;
     object-fit: cover;
     display: grid;
@@ -316,7 +316,6 @@ img {
     border: 2px solid black;
     display: table;
     margin: auto;
-    width: 15vw;
     text-align: center;
 }
 
@@ -375,6 +374,10 @@ box-shadow:
     justify-content: space-between;
     background: beige;
   }
+
+#index_img_1 {
+    padding: 70px;
+}
 
 #box_1 {
     height: 140vh;
@@ -474,7 +477,7 @@ box-shadow:
     "a1 a2 a3"
     "a4 a5 a6"
     ;
-    
+
     grid-template-rows: repeat(2, 1fr);
 }
 
@@ -619,28 +622,28 @@ article {
 
 .form {
     background-color: rgba(198, 77, 41, 0.708);
-    padding: 50px;
+    padding: 30px;
 }
 
 .sign-up-form {
+    padding: 50px;
     display: grid;
     align-items: center;
     justify-content: center;
-    padding: 50px;
 }
 
 .form-input {
     margin-bottom: 1em;
-  }
+}
 
-  .form-input input {
+.form-input input {
     width: 30vw;
     padding: 10px;
     border: none;
     font-weight: 600;
-  }
+}
 
-  .submit-btn {
+.submit-btn {
     cursor: pointer;
     width: 20vw;
     padding: 1em;
@@ -651,13 +654,17 @@ article {
     color: white;
     font-weight: 600;
     text-transform: uppercase;
-    margin-left: 70px;
     margin-top: 30px;
-  }
+}
 
-  .submit-btn:hover {
+.submit-btn:hover {
     background-color: rgb(95, 95, 95);
-  }
+}
+
+#submit {
+    display: flex;
+    justify-content: center;
+}
 
 /* Footer */
 
@@ -720,15 +727,38 @@ article {
         font-size:3vw;
     }
 
-    .lär_känna_mig {
-        height: 70vh;
+    #undertitle{
+        font-size: 7vw;
     }
 
-     #container { 
+    h2 {
+        font-size: 5vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+
+    .button_span {
+        font-size: 3vw;
+        padding: 10px;
+    }
+
+    #container { 
 	    width: 80%; 
+        height: auto;
     }
 
-    #index_img {
+    #index_img_1 {
+        padding: 0%;
+        width: 100%;
+    }
+
+    #index_img_2 {
         display: none;
+    }
+
+    .par_intro {
+        padding: 50px;
     }
 }
