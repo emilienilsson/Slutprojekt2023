@@ -33,8 +33,8 @@ Syftet med hemsidan är att vara en typ av marknadsföring och informationssida,
 
 **v.18**
 - responsivitet, t.ex. padding
-- potentiell scroll funktion
+- använd procent eller px vid bilder
 
 **v.19**
-- 
+- potentiell scroll funktion
 
