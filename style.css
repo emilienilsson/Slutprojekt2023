@@ -111,7 +111,7 @@ nav {
 }
 
 /* Index header */
-.intro {
+  #intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,7 +124,7 @@ nav {
     background-repeat: no-repeat;
   }
 
-  .intro h1 {
+  #intro h1 {
     font-family: serif;
     font-size: 60px;
     color: rgb(236, 236, 191);
@@ -134,7 +134,7 @@ nav {
     text-align: center;
   }
   
-  .intro p {
+  #intro p {
     font-size: 20px;
     color:  rgb(236, 236, 191);;
     text-transform: uppercase;
@@ -170,7 +170,7 @@ nav {
   ;
 }
 
-#index_img_2 {
+.index_img_2 {
     background-color: beige;
     object-fit: cover;
     display: grid;
@@ -336,12 +336,12 @@ img {
     margin-top: -20px;
 }
 
-.button_span > * { 
+.button > * { 
 	text-decoration: none;
     color: black;
 }
 
-.button_span {
+.button {
     font-family:sans-serif;
     padding: 15px;
     border: 2px solid black;
@@ -412,7 +412,7 @@ box-shadow:
     background: beige;
   }
 
-#index_img_1 {
+.index_img_1 {
     max-width: 100%;
     height: 100%;
     padding: 50px;
@@ -427,7 +427,7 @@ box-shadow:
     align-items: center;
 }
 
-#box_1_2 {
+.box_1_2 {
     text-align: center;
     font-size: large;
     width: 40vw;
@@ -435,7 +435,7 @@ box-shadow:
     height: auto;
 }
 
-#box_2_2 {
+.box_2_2 {
     text-align: center;
     font-size: large;
     padding: 30px;
@@ -666,8 +666,9 @@ article {
 
 #om_mig {
     height: 115vh; 
-    width: 100%;
+    width: 650px;
     margin-bottom: -4px;
+    max-width: 100%;
 }
 
 
@@ -770,11 +771,11 @@ article {
 
 @media screen and (max-width: 768px) {
 
-    .intro h1 {
+    #intro h1 {
         font-size:7vw;
     }
 
-    .intro p {
+    #intro p {
         font-size:3vw;
     }
 
@@ -790,7 +791,7 @@ article {
         font-size: 3vw;
     }
 
-    .button_span {
+    .button {
         font-size: 3vw;
         padding: 10px;
     }
@@ -804,17 +805,17 @@ article {
         flex-direction: column;
     }
 
-    #index_img_1 {
+    .index_img_1 {
         padding: 0%;
         width: 100%;
         height: auto;
     }
 
-    #index_img_2 {
+    .index_img_2 {
         display: none;
     }
 
-    #booking_img_1 {
+    #kontakt_1 {
         display: none;
     }
 
@@ -828,12 +829,12 @@ article {
         align-items: center;
     }
 
-    #box_1_2 {
+    .box_1_2 {
         height: fit-content;
         width: 75%;
     }
 
-    #box_2_2 {
+    .box_2_2 {
         width: auto;
         margin-top: 0;
     }
@@ -918,10 +919,6 @@ article {
 /*iPad layout*/
 
 @media screen and (min-width: 769px) and (max-width: 1000px){
-
-    #index_img_1{
-        float: right;
-    }
 
     p {
         text-align: justify;
@@ -1028,7 +1025,7 @@ article {
         height: auto;
     }
 
-    #box_1_2 {
+    .box_1_2 {
         height: auto;
         width: 50%;
     }

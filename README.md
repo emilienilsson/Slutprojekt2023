@@ -38,3 +38,7 @@ Syftet med hemsidan är att vara en typ av marknadsföring och informationssida,
 **v.19**
 - potentiell scroll funktion
 
+**v.21**
+- tester
+- åtgärder 
+
